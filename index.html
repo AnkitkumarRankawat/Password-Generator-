@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator App | onlineITtuts</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Password Generator</h1>
+        <div class="password_field">
+            <span class="password_display">
+                <span class="password_placeholder">#hjoifll23</span>
+            </span>
+            <div class="copy_wrapper">
+                <span class="copy_text"></span>
+                <button type="button" class="copy_btn">
+                   Copy
+                </button>
+            </div>
+        </div>
+
+        <form action=""  class="password_setting">
+            <div class="char_length">
+                <p>Character Length</p>
+                <span class="char_count">0</span>
+            </div>
+            <input
+              type="range"
+              class= "char_length_slider"
+              min="1"
+              max="30"
+              value="15"
+              autocomplete="off"
+              />
+
+              <div class="char_include_group">
+                <label>
+                    <input type="checkbox" id="Uppercase" value="Uppercase" checked/>
+                    <span class="custom_checkbox"></span>
+                    <p>Include Uppercase letters</p>
+                  </label>
+                  <label>
+                    <input type="checkbox" id="Lowercase" value="Lowercase"/>
+                    <span class="custom_checkbox"></span>
+                    <p>Include Lowercase letters</p>
+                   </label> 
+                   <label>
+                    <input type="checkbox" id="Number" value="Number"/>
+                    <span class="custom_checkbox"></span>
+                    <p>Include Numbers</p>
+                   </label>
+                   <label>
+                    <input type="checkbox" id="Symbols" value="Symbols"/>
+                    <span class="custom_checkbox"></span>
+                    <p>Include Symbols </p>
+                   </label>
+                 </div>
+
+
+                 <div class="strength_box">
+                    <span class="strength_label">Strength</span>
+                    <div class="strength_rating">
+                        <span class="strength_rating_text">Strong</span>
+                        <div class="bar">1</div>
+                        <div class="bar">2</div>
+                        <div class="bar">3</div>
+                        <div class="bar">4</div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <button class="generate_btn" type="submit">
+                        <span>generate</span>
+                        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                        </svg>
+                       </button>
+                     </form>
+                   </main>
+                   <script src="app.js"></script>
+                </body>
+             </html>
